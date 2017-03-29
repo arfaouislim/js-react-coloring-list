@@ -35,3 +35,24 @@
   min-width: 120px;
   margin-bottom: 0.2em;
 }
+.label{
+  font-size: 1.5em;
+
+}
+.creation{
+  display: flex;
+  justify-content: center;
+
+}
+.form{
+
+  background-color: #ccc;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+.form input {
+  padding: 0.2em;
+  width: 20%;
+  border-radius: 10px;
+}
