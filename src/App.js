@@ -37,6 +37,12 @@ class App extends Component {
       objStyle : {backgroundColor: color}
     });
   }
+  handleAddColor = () => {
+    console.log('coucou');
+    this.setState({
+      colors: [...this.state.colors, {name: this.state.name, color: this.state.color, id: this.state.colors.length + 1}]
+    });
+  }
 
   render() {
     return (
@@ -68,6 +74,7 @@ class App extends Component {
 
           <p><label className="label">Color : </label>
           <input type="text" onChange={this.handleChange} name="color"/></p>
+          <button type="button" onClick={this.handleAddColor}>Ajouter une couleur</button>
         </form>
       </div>
       </div>
